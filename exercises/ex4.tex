@@ -1,5 +1,34 @@
 \subsection{Aufgabe 4: (SQL)}
 \label{sec:Aufgabe4}
+\begin{tabular}{c|c}
+     \textbf{InterpretID} & \textbf{Interpret} \\
+     \hline
+     1 & Name1 \\
+     2 & Name2 \\
+     3 & Name3
+\end{tabular}
+
+\begin{tabular}{c|c|c}
+     \underline{\textbf{AlbumID}} & \textbf{Name} & \udensdash{InterpretID} & Erscheinungsdatum\\
+     \hline
+     1 & Name1 & 1 \\
+     2 & Name2 & 1\\
+     3 & Name3 & 1
+\end{tabular}
+
+\begin{tabular}{c|c|c}
+     \underline{\textbf{TrackID}} & \textbf{Trackname} & \udensdash{AlbumID} & Duration & InterpretID? \\
+     \hline
+     1 & Name1 & 1 \\
+     2 & Name2 & 1\\
+     3 & Name3 & 1
+\end{tabular}
 \begin{enumerate}[label=\alph*)]
-    \item \textit{Hier kommt die Aufgabe}
+    \item Geben Sie allte Tracks mit Duration > 200 aus.
+    \item Geben Sie die Länge jedes Albums (Summe über alle Titel des Albums) aus.
+    \item Geben Sie alle Interpreten und - sofern vorhanden - auch die zugehörigen Alben aus.
+    \item Geben Sie alle Interpreten aus, zu denen es kein Album gibt.
+    \item Geben Sie alle Tracks aus, deren Länge größer als der Durchschnitt ist.
+    \item Erzeugen Sie eine View '5laengstetracks', welche die 5 längsten Tracks des Albums mit der ID 1 ausgibt.
+    \item Löschen Sie die erzeuge View.
 \end{enumerate}
