@@ -1,25 +1,48 @@
+\newpage
 \subsection{Aufgabe 6: XML}
 \label{sec:Aufgabe6}
 \begin{enumerate}[label=\alph*)]
-    \item \textit{Hier kommt die Aufgabe}
-    XML:
-<report>
-    einleitung
-    hauptschluss
+    \item Gegeben ist folgendes XML. Wie sieht das zugehörige DTD aus? (Auch hier kommt es zu Abweichungen aus der Klausur)
+    \begin{minted}{XML}
+        <buch>
+            <inhalt>
+                <prolog iid='i1'>
+                    Hier stand etwas...
+                </prolog>
+                <hauptteil iid='i2'>
+                    Hier stand etwas...
+                </hauptteil>
+                <schluss iid='i3'>
+                    Hier stand etwas...
+                </schluss>
+            </inhalt>
+            <kapitel kid='k1' iid='i1'>
+                <einleitung seitenanzahl=5>
+                    Hier stand etwas...
+                </einleitung>
+                <abschnitt seitenanzahl=12>
+                    Hier stand etwas...
+                </abschnitt>
+                <abschnitt seitenanzahl=3>
+                    Hier stand etwas...
+                </abschnitt>
+            </kapitel>
+            <kapitel kid='k2'>
+                <abschnitt seitenanzahl=2>
+                    Hier stand etwas...
+                </abschnitt>
+                <abschnitt seitenanzahl=13>
+                    Hier stand etwas...
+                </abschnitt>
+            </kapitel>
+        </buch>
+    \end{minted}
     
-    kaptitel
-        einleitung
-        abschnitt
-        abschnitt
-        
-    kaptitel
-        abschnitt
-</report>
-
-Wann ist XML Wohldefiniert?
-
-DTD und XPath
-Summe über seitenzahl in kapitel
-Vom ersten Kapitel einleitung
-Letztes Kapitel
+    \item Wann spricht man von wohlgeformten XML?
+    \item Wie lauten die XPath Befehle für folgende Abfragen?
+    \begin{enumerate}[label=\arabic*.]
+        \item Geben Sie den Text aus der Einleitung des ersten Kapitels an.
+        \item Aus wie vielen Seiten besteht das erste Kapitel?
+        \item Geben Sie das letzte Kapitel aus.
+    \end{enumerate}
 \end{enumerate}
