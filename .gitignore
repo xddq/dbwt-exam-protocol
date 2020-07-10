@@ -1,0 +1,8 @@
+# ignore .swp files
+*.swp
+# ignore pdflatex outputs that are only needed for debugging
+*.aux
+*.log
+*.out
+# ignore cache created by pygments
+_minted-main
