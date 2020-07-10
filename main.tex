@@ -37,7 +37,7 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows,automata}
 
-% use this packages to allow including hrefs
+% used to allow including hrefs
 \usepackage[hyphens]{url}
 \usepackage{hyperref}
 \hypersetup{
@@ -46,6 +46,11 @@
   filecolor=magenta,
   urlcolor=cyan,
 }
+% used to create dashed underlines with \dashuline{value}
+\usepackage[normalem]{ulem}
+% used to create tables that auto resize if they don't fit the textwidth
+% requires {graphicx} as well.
+\usepackage{adjustbox}
 \begin{document}
 
 % FH Aachen Logo nach rechts oben in die Ecke der ersten Seite

@@ -1,8 +1,49 @@
 \subsection{Aufgabe 3: Normalisierung}
-\label{sec:Aufgabe3}
+\label{sec:ex3}
 \begin{enumerate}[label=\alph*)]
-    \item in 1NF (Lieferzeitpunk Anschrift(Ort, PLZ) NameORG ID )
-    \item Hersteller - Farbe - Kennzeichen - Farbcode - Herstellersitz - Fahr\_Nr - Fahr\_Vorname - Fahr\_Nachname in 3NF 
-    \item Wann einer Tabelle in 2NF
-    \item Was ist funtionale Abhängigkeit
+        % give item a label to point to it in the caption
+    \item  Überführen Sie die folgende Tabelle in die 1NF.\label{itm:a3-first}\\
+        %\\[2ex]  skips two lines
+        \begin{table}[h!]
+            \centering
+            \begin{adjustbox}{max width=\textwidth}
+                \begin{tabular}{*{4}{|c}|} % creates table with 4 columns
+                    \hline % draws a horizontal line
+                    \textbf{LieferID} & \textbf{Anschrift} & 
+                    \textbf{Organisationsname} & \textbf{Lieferzeitpunkt}\\
+                    \hline
+                    1 & 52070; Eupener Straße; 70 & Fh-Aachen & Vormittags; 
+                    Nachmittags\\
+                    \hline
+                \end{tabular}
+            \end{adjustbox}
+            \caption{Ausgangstabelle für \ref{itm:a3-first}}
+            \label{tab:transfrom_to_1nf}
+        \end{table}
+    \item Überführen Sie folgende Tabelle direkt in die 3NF. Unterstreichen Sie
+        jeweils den \underline{Primärschlüssel} und den \dashuline{Fremdschlüssel}
+        .\label{itm:a3-second}\\
+        \begin{table}[h!]
+            \centering
+            \begin{adjustbox}{max width=\textwidth}
+                \begin{tabular}{*{8}{|c}|} % draws seven columns
+                    \hline
+                    \textbf{Hersteller} & \textbf{Farbe} & \textbf{Knz} & \textbf{Farbcode}
+                    & \textbf{Herstellersitz} & \textbf{Fahr\_Nr} & \textbf{Fahr\_Vorname}
+                    & \textbf{Fahr\_Nachname}\\
+                    \hline
+                    Opel & Silber & DB-WT-10 & 135 & Rüsselsheim & 13337 & Ronnie & Nator\\
+                    \hline
+                    Opel & Blau & DB-WT-11 & 274 & Rüsselsheim & 13338 & Mike & Mann\\
+                    \hline
+                    VW & Beige & DB-WT-12 & 271 & Wolfsburg & 13339 & Frauke & Frau\\
+                    \hline
+                \end{tabular}
+            \end{adjustbox}
+            \caption{Ausgangstabelle für \ref{itm:a3-second}}
+            \label{tab:transform_to_3nf}
+        \end{table}
+    \item Welche Bedingungen müssen gelten, damit eine Tabelle in der 2NF vorliegt?
+    \item Erklären Sie den Begriff der funktionellen Abhängigkeit und erläutern
+        Sie diesen an einem Beispiel.
 \end{enumerate}
