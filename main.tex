@@ -37,6 +37,15 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows,automata}
 
+% use this packages to allow including hrefs
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+}
 \begin{document}
 
 % FH Aachen Logo nach rechts oben in die Ecke der ersten Seite
@@ -45,13 +54,13 @@
 %\end{textblock*}
 
 \begin{flushleft}
-{\footnotesize{Prof.\,Dr.\,A.\,Hannig \textbar{ }FH Aachen}} \\
+    {\footnotesize{Prof.\,Dr.\,A.\,Hannig \textbar{ }FH Aachen}} \\
 
-\vspace{24pt}
-\parindent=-0.5pt
-\begin{tabu} {@{}X[l]X[c]X[r]@{}}
-{\LARGE{\textbf{Datenbanken und Webtechnologien}}} & {\Large{WS1920}} & {\textnormal{Klausur 09.07.2020}} \\
-\end{tabu}
+    \vspace{24pt}
+    \parindent=-0.5pt
+    \begin{tabu} {@{}X[l]X[c]X[r]@{}}
+        {\LARGE{\textbf{Datenbanken und Webtechnologien}}} & {\Large{WS1920}} & {\textnormal{Klausur 09.07.2020}} \\
+    \end{tabu}
 \end{flushleft}
 
 \vspace{24pt}
@@ -63,12 +72,20 @@
     }%
 }%
 
-\input{exercises/ex1}
-\input{exercises/ex2}
-\input{exercises/ex3}
-\input{exercises/ex4}
-\input{exercises/ex5}
-\input{exercises/ex6}
-\input{exercises/ex7}
+% include all exercises
+\begin{section}{Gedächtnisprotokoll Aufgaben}
+    \input{exercises/ex1}
+    \input{exercises/ex2}
+    \input{exercises/ex3}
+    \input{exercises/ex4}
+    \input{exercises/ex5}
+    \input{exercises/ex6}
+    \input{exercises/ex7}
+\end{section}
+% include all solutions
+\pagebreak
+\begin{section}{Gedächtnissprotokoll Lösungen}
+    \input{solutions/ex7}
+\end{section}
 
 \end{document}
