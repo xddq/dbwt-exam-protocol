@@ -1,43 +1,37 @@
 \newpage
 \subsection{Aufgabe 5: ER-Diagramm}
 \label{sec:Aufgabe5}
-\textbf{Die Aufgaben (a) - (c) waren in einem Fließtext formuliert}.
 \begin{enumerate}[label=\alph*)]
-    \item Erstellen Sie zu folgendem Sachverhalt ein ER-Diagramm \textbf{ohne} Verwendung von Beziehungen.
-    \\[0.5cm]
-    Ein Auto hat:
-    \begin{enumerate}[label=\arabic*.]
-        \item Eindeutige Fahrgestellnummer.
-        \item Ausstattung. (Klimaanlage, Sitzheizung, etc.)
-        \item Verbrauch, welcher sich aus dem Gewicht und dem Motor (klein, mittel, groß) zusammensetzt.
-        \item Hersteller, zu dem der Ort, die Straße und die Plz bekannt sind.
-    \end{enumerate}
-    
-    \item Erstellen Sie zu folgendem Sachverhalt ein ER-Diagramm \textbf{mit} Verwendung von Beziehungen.
-    \\[0.5cm]
-    Ein Mieter kann mehrere Autos mieten. Ein Auto kann von mehreren Nutzern gemietet werden.
-    \\
-    Mietet ein Mieter ein Auto, so wird dabei der Start- und der Endzeitpunkt festgelegt.
-    \\
-    Ein Auto kommt mehrmals zur Reinigung. Jede Reinigung ist genau einem Fahrzeug zugeordnet.
-    \\[0.2cm]
-    Eine Reinigung hat:
-    \begin{enumerate}[label=\arabic*.]
-        \item Datum.
-        \item Hallenbereich.
-        \item Dieses Wertepaar ist alleine nicht eindeutig.
-    \end{enumerate}
-    Ein Mieter hat:
-    \begin{enumerate}[label=\arabic*.]
-        \item Email Adresse.
-        \item Vor- und Nachname.
-        \item Diese Werte zusammen sind einem Mieter eindeutig zuzuordnen.
-    \end{enumerate}
-
+    \item Erstellen sie ein ER-Diagramm nach Chen, \textbf{ohne} Beziehungen, welches die
+        folgende Beschreibung zusammenfasst.\\[2ex] In einem Autohaus werden Autos
+        verkauft. Die Autos besitzen Motoren unterschiedlicher Klassen. Es gibt
+        kleine, mittlere und große Motoren. Zu jedem Auto wird eine Fahrgestellnummer
+        gespeichert, die das Auto eindeutig identifziert. Ein genaues Gewicht wird
+        ebenfalls gesichert. Zu jedem Auto wird der passende Verbrauch berechnet,
+        welcher sich aus dem Gewicht und der größe des Motors zusammensetzt. Es
+        gibt jedes Auto mit unterschiedlichen Ausstattungen (Klimaanlage, Tempomat,
+        Sitzheizung etc..). Bei jedem Hersteller ist die Adresse und der damit
+        verbundene Ort, PLZ, die Straße und die Hausnummer hinterlegt.
+    \item Erstellen Sie zu folgendem Sachverhalt ein ER-Diagramm nach Chen
+        \textbf{mit} Verwendung von Beziehungen.\\[2ex]
+        Im folgenden Text wird das Geschäftsmodell einer Carsharing Firma erläutert.
+        Für diese sollen Sie ein ER-Modell nach Chen mit Beziehungen anfertigen!
+        In der Firma soll es möglich sein, dass jeder Mieter auch mehrere Autos
+        mietet. Beim Mieten wird der Start- und Endzeitpunkt festgelegt. Die Autos
+        werden in regelmäßgen Abständen gereinigt werden müssen. Dazu kommen Sie
+        in die Reinigung. Die Reinigung ist groß und in viele Hallenbereiche
+        unterteilt. Für jede Reinigung wird das Datum gespeichert. Es passen
+        mehrere Autos in einen Hallenbereich und täglich werden mehrere Autos
+        gereinigt. Mieter müssen sich mit ihrer Mail Adresse sowie dem Namen
+        registrieren. Durch diese Parameter sind sie eindeutig identifizierbar.
     \item
-    Erstellen Sie zu folgendem Sachverhalt ein ER-Diagramm mit einer Min-Max Kardinalität
-    \\[0.5cm]
-    Ein Nutzer muss entweder Anbieter oder Mieter sein. Er kann allerdings auch beide Rollen einnehmen.
+        Erstellen Sie zu folgendem Sachverhalt ein ER-Diagramm mit einer Min-Max
+        Kardinalität\\[0.5cm]
+        Ein Nutzer muss entweder Anbieter oder Mieter sein. Er kann allerdings auch
+        beide Rollen einnehmen. Nutzer besitzen eine eindeutige KundenNr. Sie
+        müssen einen Username und ihren vollen Namen angeben. Anbieter müssen
+        ihre Adresse und ihre Bankinformation hinterlegen. Optional kann eine
+        Bewertung für Mieter gespeichert werden.
 
     \item Notieren Sie die Lösung aus Aufgabe (c) in der Relationsschreibweise \textit{attribut(\underline{wert1},...))}.
 \end{enumerate}
